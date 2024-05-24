@@ -61,3 +61,8 @@ add_library (detection OBJECT
 install(FILES ${DETECTION_INCLUDES}
     DESTINATION "${INCLUDE_INSTALL_PATH}/detection"
 )
+
+add_fuzztest( extract_fuzz
+  #SOURCES
+        #../http2_huffman_state_machine.cc
+)
