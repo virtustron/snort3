@@ -65,4 +65,5 @@ install(FILES ${DETECTION_INCLUDES}
 add_fuzztest(extract_fuzz
     SOURCES
         extract.cc
+        ../log/messages.cc
 )
