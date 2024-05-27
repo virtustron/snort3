@@ -35,9 +35,9 @@
 #include "profiler/profiler_defs.h"
 #include "protocols/packet.h"
 
-// must appear after snort_config.h to avoid broken c++ map include
-#include <CppUTest/CommandLineTestRunner.h>
-#include <CppUTest/TestHarness.h>
+// // must appear after snort_config.h to avoid broken c++ map include
+// #include <CppUTest/CommandLineTestRunner.h>
+// #include <CppUTest/TestHarness.h>
 
 using namespace snort;
 
