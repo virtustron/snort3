@@ -66,4 +66,7 @@ add_fuzztest(extract_fuzz
     SOURCES
         extract.cc
         ../log/messages.cc
+        ../main/snort_config.cc
+        ../parser/parse_conf.cc
+        ../main/thread.cc
 )
