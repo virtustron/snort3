@@ -14,3 +14,8 @@ if ( HAVE_HYPERSCAN )
             ${HS_LIBRARIES}
     )
 endif()
+
+add_fuzztest(ips_regex_fuzz
+    # SOURCES
+    #     extract.cc
+)
