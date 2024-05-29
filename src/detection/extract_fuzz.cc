@@ -37,6 +37,23 @@
 
 using namespace snort;
 
+// ===== Stubs =====
+
+enum WarningGroup
+{
+    WARN_DAQ, WARN_CONF, WARN_CONF_STRICT, WARN_VARS,
+    WARN_SYMBOLS, WARN_SCRIPTS, WARN_HOSTS, WARN_RULES,
+    WARN_FLOWBITS, WARN_PLUGINS,
+    WARN_MAX
+};
+
+namespace snort
+{
+void ParseWarning(WarningGroup, const char *, ...) {}
+}
+
+// ===== =====
+
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
     if (size == 0) {
         return 0;

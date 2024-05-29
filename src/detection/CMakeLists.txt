@@ -65,8 +65,19 @@ install(FILES ${DETECTION_INCLUDES}
 add_fuzztest(extract_fuzz
     SOURCES
         extract.cc
-        ../log/messages.cc
-        ../main/snort_config.cc
-        ../parser/parse_conf.cc
-        ../main/thread.cc
+        # ../filters/sfthreshold.cc
+        # ../filters/rate_filter.cc
+        # ../framework/data_bus.cc
+        # ../log/messages.cc
+        # ../main/snort_config.cc
+        # ../main/thread.cc
+        # ../main/policy.cc
+        # ../managers/action_manager.cc
+        # ../managers/inspector_manager.cc
+        # ../parser/parse_conf.cc
+        # ../parser/parser.cc
+        # ../packet_io/sfdaq_config.cc
+        # ../ports/rule_port_tables.cc
+        # ../target_based/snort_protocols.cc
+        # ../trace/trace_config.cc
 )
